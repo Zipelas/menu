@@ -1,0 +1,59 @@
+  /* Grundläggande reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stil för knappen som öppnar menyn */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+/* Stängningsknappen inne i menyn */
+.close-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Sidomenyn */
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+/* Länkar i menyn */
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Färgändring vid hover */
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Synlig meny */
+.sidebar.show {
+    right: 0;
+}
