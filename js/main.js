@@ -12,3 +12,12 @@ function toggleMenu() {
 }
 
 document.getElementById("menu-icon").onclick = toggleMenu;
+
+/**
+ * Ökar textstorleken på hela sidan
+ */
+function increaseFontSize() {
+    document.body.style.fontSize = "larger";
+}
+
+document.getElementById("increase-font").onclick = increaseFontSize;
